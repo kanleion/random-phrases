@@ -1,6 +1,6 @@
 <template>
   <section class="random-phrase__container">
-    <p>Esta sería una nueva Prueba</p>
+    <p>{{ frase }}</p>
     <button>Quiero una nueva frase</button>
   </section>
 </template>
@@ -8,8 +8,10 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  data(){
+    return {
+      frase: ''
+    }
   }
 }
 </script>
